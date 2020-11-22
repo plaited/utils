@@ -1,6 +1,6 @@
 import test from 'ava'
 import sinon from 'sinon'
-import {callAll} from '..'
+import {callAll} from '../src'
 
 test('callAll()', t => {
   const expected = 'string'

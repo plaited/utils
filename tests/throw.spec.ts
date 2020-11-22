@@ -1,5 +1,5 @@
 import test from 'ava'
-import {_throw} from '..'
+import {_throw} from '../src'
 
 test('_throw()', t => {
   const error = t.throws(() => {

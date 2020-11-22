@@ -1,5 +1,5 @@
 import test from 'ava'
-import {get} from '..'
+import {get} from '../src'
 
 test('get()', t => {
   const obj = {a: {b: {c: 'hello', d: [1, 2, 3, 'd']}}}
