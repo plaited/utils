@@ -1,7 +1,7 @@
 /* eslint-disable no-global-assign */
 /* eslint-disable no-restricted-globals */
 import test from 'ava'
-import {ueid} from '..'
+import {ueid} from '../src'
 
 test.beforeEach(t => {
   t.context = {Date, Math}

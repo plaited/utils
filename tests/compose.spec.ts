@@ -1,5 +1,5 @@
 import test from 'ava'
-import {compose} from '..'
+import {compose} from '../src'
 
 test('compose()', t => {
   const add2 = (num: number) => num + 2

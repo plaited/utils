@@ -1,5 +1,5 @@
 import test from 'ava'
-import {useStore} from '..'
+import {useStore} from '../src'
 
 test('useStore()', t => {
   const [store, setStore] = useStore({a: 1})

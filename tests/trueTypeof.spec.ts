@@ -1,5 +1,5 @@
 import test from 'ava'
-import {trueTypeOf} from '..'
+import {trueTypeOf} from '../src'
 
 test('trueTypeOf()', t => {
   t.is(trueTypeOf([]), 'array')

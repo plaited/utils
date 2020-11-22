@@ -1,5 +1,5 @@
 import test from 'ava'
-import {escape, unescape} from '..'
+import {escape, unescape} from '../src'
 
 test('escape()', t => {
   t.is(escape('&<>\'"'), '&amp;&lt;&gt;&#39;&quot;')

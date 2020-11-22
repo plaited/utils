@@ -1,5 +1,5 @@
 import test from 'ava'
-import {pipe} from '..'
+import {pipe} from '../src'
 
 test('pipe()', t => {
   const add2 = (num: number) => num + 2
