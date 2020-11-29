@@ -1,12 +1,12 @@
 {
   "name": "@assembl-dev/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "node": ">= 14.2.0",
     "npm": ">= 6.14"
   },
-  "main": "dist/index.ts",
-  "module": "dist/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist/"
   ],
@@ -42,16 +42,15 @@
       "**/*.spec.ts"
     ],
     "require": [
-      "ts-node/register"
+      "esm"
     ]
   },
   "types": "dist/index.d.ts",
   "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@babel/preset-env": "^7.12.7",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "@types/sinon": "^9.0.8",
-    "@typescript-eslint/eslint-plugin": "^4.6.0",
-    "@typescript-eslint/parser": "^4.6.0",
     "autoprefixer": "^10.0.1",
     "ava": "^3.13.0",
     "c8": "^7.3.5",
@@ -59,10 +58,10 @@
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-compat": "^3.8.0",
+    "esm": "^3.2.25",
     "format-package": "^6.1.0",
     "husky": "^4.3.0",
     "sinon": "^9.2.1",
-    "ts-node": "^9.0.0",
     "typescript": "^4.0.5"
   }
 }
