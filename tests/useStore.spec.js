@@ -3,9 +3,9 @@ import {useStore} from '../src'
 
 test('useStore()', t => {
   const [store, setStore] = useStore({a: 1})
-  setStore((prev: Record<string, unknown>) => ({...prev, b: 2}))
+  setStore(prev => ({...prev, b: 2}))
   t.deepEqual(store(), {a: 1, b: 2})
-  setStore((prev: unknown) => {
+  setStore(prev => {
     // eslint-disable-next-line no-unused-vars
     prev = 2
   })

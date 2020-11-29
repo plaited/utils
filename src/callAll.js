@@ -4,5 +4,5 @@
  * @example
  * e => callAll(onClick, prevent)(e);
  */
-export const callAll = (...fns: Array<(...args: unknown[]) => unknown>) => 
-  (...args: unknown[] ) => fns.forEach(fn => fn && fn(...args))
+export const callAll = (...fns) => 
+  (...args) => fns.forEach(fn => fn && fn(...args))

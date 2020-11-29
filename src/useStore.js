@@ -1,13 +1,9 @@
 import {trueTypeOf} from './trueTypeOf'
-
-/** @returns {Array.<function, function>} [getStore, setStore] */
-type GetterAndSetter = readonly [() => unknown, (newStore: unknown) => void]
-export const useStore = (initialStore: unknown) => {
+export const useStore = initialStore => {
   let store = initialStore
   const get = () => store
-  const set = (newStore: unknown) => {
-    // @ts-ignore: runtime check
+  const set = newStore => {
     store = trueTypeOf(newStore) === 'function' ? newStore(store) : newStore
   }
-  return Object.freeze([get, set]) as GetterAndSetter
+  return Object.freeze([get, set])
 }

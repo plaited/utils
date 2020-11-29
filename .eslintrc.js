@@ -5,13 +5,12 @@ module.exports = {
     sourceType: 'module',
     allowImportExportEverywhere: true,
   },
-  parser: '@typescript-eslint/parser',
   env: {
     browser: true,
     node: true,
     es6: true,
   },
-  extends: ['eslint:recommended', 'plugin:compat/recommended', 'plugin:@typescript-eslint/recommended'],
+  extends: ['eslint:recommended', 'plugin:compat/recommended'],
   rules: {
     strict: 0,
     semi: ['error', 'never'],
@@ -59,8 +58,6 @@ module.exports = {
     'no-useless-constructor': 0,
     'max-classes-per-file': 0,
     'object-curly-spacing': ['error', 'never'],
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/ban-ts-comment': ['error', {'ts-ignore': 'allow-with-description'}],
   },
   overrides: [
     {
