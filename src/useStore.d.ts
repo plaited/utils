@@ -1,0 +1,1 @@
+export function useStore(initialStore: unknown): readonly [() => unknown, (newStore: unknown) => void];
