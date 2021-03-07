@@ -1,5 +1,5 @@
 {
-  "name": "@assembl-dev/utils",
+  "name": "@plaited/utils",
   "version": "1.0.3",
   "engines": {
     "node": ">= 14.2.0",
