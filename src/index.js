@@ -1,4 +1,5 @@
 export {callAll} from './callAll'
+export {canUseDom} from './canUseDom'
 export {capitalizeString} from './capitalizeString'
 export {compose} from './compose'
 export {escape, unescape} from './escape'
