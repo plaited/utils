@@ -1,5 +1,5 @@
 export { callAll } from './callAll'
-export { canUseDOM } from './canUseDom'
+export { canUseDOM } from './canUseDOM'
 export { capitalizeString } from './capitalizeString'
 export { compose } from './compose'
 export { get } from './get'
