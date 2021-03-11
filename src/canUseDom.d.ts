@@ -1,1 +1,1 @@
-export function canUseDom(): boolean;
+export function canUseDOM(): boolean;
